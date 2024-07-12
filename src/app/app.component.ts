@@ -11,7 +11,7 @@ export class AppComponent {
 
   items: Menu[] = [
     {
-      name: 'Home',
+      name: 'Inicio',
       url: '/home',
     },
     {
