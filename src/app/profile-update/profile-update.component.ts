@@ -19,10 +19,22 @@ export class ProfileUpdateComponent {
 
   profileForm = new FormGroup({
     id: new FormControl(''),
-    name: new FormControl('', Validators.required),
-    role: new FormControl('', Validators.required),
+    name: new FormControl('', [
+      Validators.required,
+      Validators.minLength(3),
+      Validators.maxLength(100),
+    ]),
+    role: new FormControl('', [
+      Validators.required,
+      Validators.minLength(3),
+      Validators.maxLength(70),
+    ]),
     age: new FormControl(0, [Validators.required, Validators.min(0)]),
-    email: new FormControl('', Validators.required),
+    email: new FormControl('', [
+      Validators.required,
+      Validators.email,
+      Validators.maxLength(70),
+    ]),
     isActive: new FormControl(false),
     country: new FormControl(''),
     experience: new FormControl(''),

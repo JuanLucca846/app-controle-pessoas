@@ -10,6 +10,7 @@ import { ProfileCreateComponent } from './pages/profile-create/profile-create.co
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileService } from './services/profile.service';
 import { ProfileUpdateComponent } from './profile-update/profile-update.component';
+import { TableComponent } from './components/table/table.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ProfileUpdateComponent } from './profile-update/profile-update.componen
     ProfileListComponent,
     ProfileCreateComponent,
     ProfileUpdateComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,

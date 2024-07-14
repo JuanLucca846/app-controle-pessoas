@@ -27,28 +27,4 @@ export class ProfileListComponent {
       }
     );
   }
-
-  deleteProfile(profileId: string) {
-    Swal.fire({
-      title: 'Deseja deletar esse usuário ?',
-      text: 'Confirme!',
-      icon: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Deletar',
-      cancelButtonText: 'Cancelar',
-    }).then((result) => {
-      if (result.isConfirmed) {
-        this.profileService.delete(profileId).subscribe(() => {
-          Swal.fire(
-            'Usuário deletado!',
-            'O perfil foi deletado com sucesso!',
-            'success'
-          );
-          this.findAllProfiles();
-        });
-      }
-    });
-  }
 }
