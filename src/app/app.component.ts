@@ -11,10 +11,6 @@ export class AppComponent {
 
   items: IMenu[] = [
     {
-      name: 'Inicio',
-      url: '/home',
-    },
-    {
       name: 'Pessoas',
       url: '/profile',
     },

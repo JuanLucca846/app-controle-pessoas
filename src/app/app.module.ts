@@ -2,22 +2,22 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { ProfileListComponent } from './pages/profile/profile-list/profile-list.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ProfileCreateUpdateComponent } from './pages/profile-create-update/profile-create-update.component';
+import { ProfileCreateComponent } from './pages/profile-create/profile-create.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileService } from './services/profile.service';
+import { ProfileUpdateComponent } from './profile-update/profile-update.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     HeaderComponent,
     ProfileListComponent,
-    ProfileCreateUpdateComponent,
+    ProfileCreateComponent,
+    ProfileUpdateComponent,
   ],
   imports: [
     BrowserModule,

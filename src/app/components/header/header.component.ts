@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { IMenu } from 'src/app/interfaces/menu';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  @Input() items: any[] = [];
+  @Input() items: IMenu[] = [];
 }

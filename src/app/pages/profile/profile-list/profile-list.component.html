@@ -31,9 +31,7 @@
             routerLink="/profile/edit/{{ profile.id }}"
             >Editar</a
           >
-          <a
-            class="btn btn-danger btn-sm"
-            routerLink="/profile/delete/{{ profile.id }}"
+          <a class="btn btn-danger btn-sm" (click)="deleteProfile(profile.id)"
             >Deletar</a
           >
         </td>

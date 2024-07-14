@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProfileCreateUpdateComponent } from './profile-create-update.component';
+import { ProfileCreateComponent } from './profile-create.component';
 
 describe('ProfileCreateUpdateComponent', () => {
-  let component: ProfileCreateUpdateComponent;
-  let fixture: ComponentFixture<ProfileCreateUpdateComponent>;
+  let component: ProfileCreateComponent;
+  let fixture: ComponentFixture<ProfileCreateComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ProfileCreateUpdateComponent],
+      declarations: [ProfileCreateComponent],
     });
-    fixture = TestBed.createComponent(ProfileCreateUpdateComponent);
+    fixture = TestBed.createComponent(ProfileCreateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

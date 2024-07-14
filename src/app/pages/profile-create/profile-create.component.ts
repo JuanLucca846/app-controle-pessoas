@@ -6,11 +6,11 @@ import { ProfileService } from 'src/app/services/profile.service';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-profile-create-update',
-  templateUrl: './profile-create-update.component.html',
-  styleUrls: ['./profile-create-update.component.css'],
+  selector: 'app-profile-create',
+  templateUrl: './profile-create.component.html',
+  styleUrls: ['./profile-create.component.css'],
 })
-export class ProfileCreateUpdateComponent {
+export class ProfileCreateComponent {
   constructor(private profileService: ProfileService, private router: Router) {}
 
   profileForm = new FormGroup({

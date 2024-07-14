@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
 import { ProfileListComponent } from './pages/profile/profile-list/profile-list.component';
-import { ProfileCreateUpdateComponent } from './pages/profile-create-update/profile-create-update.component';
+import { ProfileCreateComponent } from './pages/profile-create/profile-create.component';
+import { ProfileUpdateComponent } from './profile-update/profile-update.component';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    component: HomeComponent,
-  },
   {
     path: 'profile',
     component: ProfileListComponent,
   },
   {
     path: 'profile/create',
-    component: ProfileCreateUpdateComponent,
+    component: ProfileCreateComponent,
+  },
+  {
+    path: 'profile/edit/:id',
+    component: ProfileUpdateComponent,
   },
 ];
 
