@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Profile } from 'src/app/interfaces/profile';
+import { IListProfile } from 'src/app/interfaces/listProfile';
 import { ProfileService } from 'src/app/services/profile.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { ProfileService } from 'src/app/services/profile.service';
 export class ProfileListComponent {
   constructor(private profileService: ProfileService) {}
 
-  profiles: Profile[];
+  profiles: IListProfile[];
 
   ngOnInit() {
     this.profileService.findAll().subscribe(

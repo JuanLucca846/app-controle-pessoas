@@ -1,4 +1,4 @@
-export interface Profile {
+export interface IListProfile {
   id: string;
   name: string;
   role: string;

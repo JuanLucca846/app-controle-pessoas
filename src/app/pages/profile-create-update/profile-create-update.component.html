@@ -1,0 +1,77 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()" [formGroup]="profileForm">
+    <div class="mb-3">
+      <label for="name" class="form-label">Nome</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        formControlName="name"
+        name="name"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="role" class="form-label">Perfil</label>
+      <input
+        type="text"
+        class="form-control"
+        id="role"
+        formControlName="role"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="age" class="form-label">Idade</label>
+      <input
+        type="number"
+        class="form-control"
+        id="age"
+        formControlName="age"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input
+        type="text"
+        class="form-control"
+        id="email"
+        formControlName="email"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="isActive" class="form-label">Ativo</label>
+      <div>
+        <label>
+          <input type="radio" formControlName="isActive" [value]="true" /> Sim
+        </label>
+        <label>
+          <input type="radio" formControlName="isActive" [value]="false" /> Não
+        </label>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="country" class="form-label">País</label>
+      <input
+        type="text"
+        class="form-control"
+        id="country"
+        formControlName="country"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="experience" class="form-label">Experiência</label>
+      <input
+        type="text"
+        class="form-control"
+        id="experience"
+        formControlName="experience"
+      />
+    </div>
+    <button
+      type="submit"
+      class="btn btn-primary"
+      [disabled]="!profileForm.valid"
+    >
+      Cadastrar
+    </button>
+  </form>
+</div>

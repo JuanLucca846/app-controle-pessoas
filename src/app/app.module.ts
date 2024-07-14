@@ -7,6 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { ProfileListComponent } from './pages/profile/profile-list/profile-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProfileCreateUpdateComponent } from './pages/profile-create-update/profile-create-update.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProfileService } from './services/profile.service';
 
 @NgModule({
   declarations: [
@@ -14,9 +17,16 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     HeaderComponent,
     ProfileListComponent,
+    ProfileCreateUpdateComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
+  providers: [ProfileService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

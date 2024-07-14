@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Menu } from './interfaces/menu';
+import { IMenu } from './interfaces/menu';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import { Menu } from './interfaces/menu';
 export class AppComponent {
   title = 'desafio-angular';
 
-  items: Menu[] = [
+  items: IMenu[] = [
     {
       name: 'Inicio',
       url: '/home',

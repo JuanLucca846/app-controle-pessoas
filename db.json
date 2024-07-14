@@ -19,6 +19,16 @@
       "isActive": true,
       "country": "BR",
       "experience": "Jr"
+    },
+    {
+      "id": "8f40",
+      "name": "Juan Lucca",
+      "role": "Admin",
+      "age": 26,
+      "email": "juan@juan.com",
+      "isActive": true,
+      "country": "Brasil",
+      "experience": "Jr"
     }
   ]
 }
