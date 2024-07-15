@@ -2,11 +2,21 @@
   "profiles": [
     {
       "id": "767f",
-      "name": "Jane Doe",
+      "name": "John Doe",
       "role": "Admin",
       "age": 22,
-      "email": "lucca470@gmail.com",
+      "email": "johndoe@gmail.com",
       "isActive": true,
+      "country": "Brasil",
+      "experience": "Pleno"
+    },
+    {
+      "id": "7079",
+      "name": "Jane Doe",
+      "role": "Admin",
+      "age": 27,
+      "email": "janedoe@gmail.com",
+      "isActive": false,
       "country": "Brasil",
       "experience": "Pleno"
     }

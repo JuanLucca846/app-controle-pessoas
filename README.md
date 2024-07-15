@@ -34,6 +34,7 @@ $npm run server
 
 1. Após iniciar a aplicação.
 2. O Frontend estara disponivel em: http://localhost:4200/profile
+3. O Deploy do Frontend estara disponivel em: https://app-controle-pessoas-dwuy.vercel.app/profile
 
 ## Tecnologias
 
