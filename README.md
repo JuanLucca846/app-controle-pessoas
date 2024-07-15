@@ -1,27 +1,41 @@
-# DesafioAngular
+# Frontend de controle de pessoas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
+Essa App faz o controle de pessoas.
 
-## Development server
+## Instalação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Clone esse repositório:
 
-## Code scaffolding
+```bash
+git clone https://github.com/JuanLucca846/app-controle-pessoas.git
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Instale.
 
-## Build
+```bash
+$ npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Iniciando a Aplicação
 
-## Running unit tests
+1. Inicie a aplicação com:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+$ng serve
+```
 
-## Running end-to-end tests
+2. Inicie o db.json com:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+$npm run server
+```
 
-## Further help
+## Uso
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Após iniciar a aplicação.
+2. O Frontend estara disponivel em: http://localhost:4200/profile
+
+## Tecnologias
+
+- ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+- ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
